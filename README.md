@@ -9,9 +9,23 @@ Make something like my Python [lab](https://github.com/palcu/cdl-python-lab).
 
 ## To Do
 
-- [ ] table of contents
+- [x] table of contents
 - [ ] slides
 - [ ] exercises
+
+### ToC
+
+- hands-on in the browser with some commands
+  - simple calculations
+  - objects / JSON
+  - if, for
+  - functions
+- show some HTML elements (html, head, body, p, ul, li, a) and CSS properties (color, display)
+- DOM manipulation (getElement, append, children, parent)
+- handlers (onClick, onHover, onLoad)
+- jQuery AJAX request with some easy to use JSON API
+
+The second part I think should involve building the almighty simple todo app example.
 
 ## Resources
 
