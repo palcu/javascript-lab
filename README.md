@@ -15,6 +15,7 @@ Make something like my Python [lab](https://github.com/palcu/cdl-python-lab).
 
 ### ToC
 
+- what is the internet, http, web, browser
 - hands-on in the browser with some commands
   - simple calculations
   - objects / JSON
