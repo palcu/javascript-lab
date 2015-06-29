@@ -45,6 +45,13 @@ The second part I think should involve building the almighty simple todo app exa
 * DOM
 * handlers
 * AJAX
+* cele 2 probleme de la facultate
+* jQuery
+
+### Idei de aplicatii
+
+* jocul meu pentru copii
+* spanzuratoarea
 
 ### Fun
 
