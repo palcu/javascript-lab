@@ -1,0 +1,138 @@
+<html>
+<body>
+<!--
+  <ul id="list1">
+    <li>a1</li>
+    <li>a2</li>
+    <li>a3</li>
+  </ul>
+  <ul id="list2">
+    <li>b1</li>
+    <li>b2</li>
+    <li>b3</li>
+  </ul>
+-->
+  <ul id = "List1"></ul>
+  <ul id = "List2"></ul>
+
+  <script>
+  var raspuns = ['a','j','u','t','o','r'];
+  var tentativa = ['_','_','_','_','_','_'];
+  var camp = document.createElement('div');
+  var text = document.createTextNode("_ _ _ _ _ _");
+  camp.appendChild(text);
+  document.getElementById('List1').appendChild(camp);
+
+  var incercari = 10;
+
+  var contor = document.createElement('div');
+  var val = document.createTextNode("Incercari ramase: " + incercari );
+  contor.appendChild(val);
+  contor.id = 0;
+  document.getElementById('List2').appendChild(contor);
+
+  document.onkeypress = function (e) {
+      e = e || window.event;
+      var charCode = e.charCode || e.keyCode,
+          character = String.fromCharCode(charCode);
+          if (incercari){
+            var tempText = '';
+            for (var i=0; i<tentativa.length; i++){
+              if (character === raspuns[i]){
+                tentativa[i]=character;
+              }
+              tempText+=tentativa[i]+' ';
+            }
+            text.nodeValue=tempText;
+            incercari--;
+            console.log(tempText);
+            if( text.nodeValue == (raspuns.join([separator = ' '])+' ') ) {
+              alert("Felicitari!");
+              incercari = 0;
+            }
+            val.nodeValue = "Incercari ramase: " + incercari;
+          }
+          else {
+            alert("That's all folks!");
+          }
+      };
+/*
+// ######################################################
+// ### Interschimbare elemente lista la apasare tasta ###
+// #######################################################
+  var l1size = 5;
+  var l2size = 7;
+  var parentNode1 = document.getElementById('List1');
+  var parentNode2 = document.getElementById('List2');
+
+  //generezi automat a1-5 si b1-7
+  for (var i=1; i<=l1size; i++) {
+    var node = document.createElement('li');
+    var text = document.createTextNode('a'+i);
+    node.appendChild(text);
+    node.id = 'l1'+i;
+    parentNode1.appendChild(node);
+
+  }
+  for (var i=1; i<=l2size; i++) {
+    var node = document.createElement('li');
+    var text = document.createTextNode('b'+i);
+    node.appendChild(text);
+    node.id = 'l2'+i;
+    parentNode2.appendChild(node);
+  }
+  var lists = document.getElementsByTagName('ul');
+  //daca tastez 1,2,...,9 imi interschimbi a1 cu b1 sau a5 cu b5 sau ....
+  document.onkeypress = function (e) {
+      e = e || window.event;
+      var charCode = e.charCode || e.keyCode,
+          character = String.fromCharCode(charCode);
+      if ( ('1' <= character) && (character <= '5') ) {
+          var temp1 = parentNode1.removeChild( document.getElementById('l1'+character) );
+          var temp2 = parentNode2.removeChild( document.getElementById('l2'+character) );
+          temp2.id = 'l1'+character;
+          temp1.id = 'l2'+character;
+          parentNode1.appendChild(temp2);
+          alert(done);
+          parentNode2.appendChild(temp1);
+      }
+      else if ( ('6' <= character) && (character <= '9') ) {
+          alert('Nu exista acel element in prima lista.');
+      }
+    };
+
+  //#########################
+*/
+
+/*
+// #######################################################
+// ### Mutare elemente dintr-o lista in alta la click. ###
+// #######################################################
+  var listItems = document.getElementsByTagName('li');
+  for (var i=0; i<listItems.length; i++) {
+    listItems[i].onclick = ChangePosition
+  }
+  function ChangePosition(event){
+      console.log(event.currentTarget, "aici")
+    // ia parintele
+    // vezi ce id are
+    // myListItem = remove move node din parinte
+    // getElementById pentru cealalta lista
+    // appendNode myListItem
+
+    //  console.log(this.parentElement, "acolo") //verificat obtinerea parintelui
+      parentNode = this.parentNode
+      myListItem = parentNode.removeChild(this)
+      if (parentNode.id === 'list1'){
+        newParent = document.getElementById('list2')
+      }
+      else{
+        newParent = document.getElementById('list1')
+      }
+      newParent.appendChild(myListItem)
+    }
+    //#########################
+*/
+  </script>
+</body>
+</html>
