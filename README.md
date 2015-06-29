@@ -46,6 +46,10 @@ The second part I think should involve building the almighty simple todo app exa
 * handlers
 * AJAX
 
+### Fun
+
+* WAT - https://www.destroyallsoftware.com/talks/wat
+
 ## Resources
 
 * http://profs.info.uaic.ro/~busaco/teach/courses/cliw/web-film.html
