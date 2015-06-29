@@ -28,6 +28,24 @@ Make something like my Python [lab](https://github.com/palcu/cdl-python-lab).
 
 The second part I think should involve building the almighty simple todo app example.
 
+### Capitole din Codeacademy
+
+* Funcții - http://www.codecademy.com/courses/javascript-beginner-en-6LzGd/0/1?curriculum_id=506324b3a7dffd00020bf661
+* Rock, Paper, Scissors - http://www.codecademy.com/courses/javascript-beginner-en-Bthev-mskY8/0/1?curriculum_id=506324b3a7dffd00020bf661
+* Arată tu un for și un while
+* Search text - http://www.codecademy.com/courses/javascript-beginner-en-XEDZA/0/1?curriculum_id=506324b3a7dffd00020bf661
+* More control flow - http://www.codecademy.com/courses/javascript-beginner-en-qDwp0/0/1?curriculum_id=506324b3a7dffd00020bf661
+* Choose adventure 2 - http://www.codecademy.com/courses/javascript-beginner-en-ZA2rb/0/1?curriculum_id=506324b3a7dffd00020bf661
+* Arrays și Objects - http://www.codecademy.com/courses/javascript-beginner-en-9Sgpi/0/1?curriculum_id=506324b3a7dffd00020bf661
+* Contact List - http://www.codecademy.com/courses/javascript-beginner-en-3bmfN/0/1?curriculum_id=506324b3a7dffd00020bf661
+
+### Eu separat
+
+* HTML, CSS
+* DOM
+* handlers
+* AJAX
+
 ## Resources
 
 * http://profs.info.uaic.ro/~busaco/teach/courses/cliw/web-film.html
