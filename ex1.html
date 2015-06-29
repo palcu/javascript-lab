@@ -1,0 +1,70 @@
+<html>
+<head>
+  <title>ROSEdu</title>
+  <style>
+    #titlu {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="titlu">ROSEdu OSSS</h1>
+  <p>Awesome summer!</p>
+  <ul id="list1">
+    <li>Linus Torvalds</li>
+    <li>Steve Jobs</li>
+    <li>Bill Gates</li>
+  </ul>
+  <ol id="list2">
+    <li>Linux</li>
+    <li>Apple</li>
+    <li>Facebook</li>
+  </ol>
+  <input type="text" id="myInput" />
+  <button id="butonulMeu">Click me!</button>
+
+  <script>
+    // console.log('sunt aici');
+
+    // Hide la buton cand fac click
+    var buton = document.getElementById("butonulMeu");
+    buton.onclick = function() {
+      // console.log("am dat click");
+      ascundeButon()
+    }
+
+    var ascundeButon = function() {
+      var titlu = document.getElementById("titlu");
+      if (titlu.style.display == "block")
+        titlu.style.display = "none";
+      else
+        titlu.style.display = "block";
+    }
+
+    // console.log(buton)
+
+    // Genereaza doua liste din 2 arrayuri
+    var list1 = ["LT", "BG", "MZ"];
+    var list2 = ["A", "B", "C"];
+
+    var myList1 = document.getElementById("list1");
+    for (var i=0; i<list1.length; i++) {
+      var myLI = document.createElement('li');
+      var myText = document.createTextNode(list1[i]);
+      myLI.appendChild(myText);
+      myList1.appendChild(myLI)
+    }
+
+    // Exercitii
+    // 0. sa faceti acelasi lucru pentru myList2
+    // 1. cand dau click schimba titlul
+    //    x = document.getElementById("myInput")
+    //    x.value e ce imi trebuie mie
+    // 2. cand dau click pe un element scoate-l si adauga-l in partea cealalta
+    //    - pune handler pe toate li-urile
+    //    - x = removeNode din event.currentTarget
+    //    - vezi clasa la parentNode
+    //    - adauga cu getElementById in cealalta lista
+  </script>
+</body>
+</html>
