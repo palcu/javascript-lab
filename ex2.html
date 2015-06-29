@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>ROSEdu</title>
+  <style>
+    #titlu {
+      position:fixed;
+    }
+    img {
+      height: 300px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11330652_1634883240093912_66088853_n.jpg" id="titlu"></img>
+  <script>
+    titlu = document.getElementById("titlu");
+    titlu.style.top = 400;
+    titlu.style.left = 400;
+
+    velocityTop = 50
+    velocityLeft = 50
+
+    width = 1024
+    height = 768
+
+    setInterval(function() {
+      console.log(titlu.style.top)
+      var directionTop = Math.random() > 0.5 ? 1 : -1;
+      var directionLeft = Math.random() > 0.5 ? 1 : -1;
+
+      nextTop = parseInt(titlu.style.top) + velocityTop * directionTop
+      if (nextTop < 0)
+        nextTop = height
+      if (nextTop > height)
+        nextTop = 0
+      titlu.style.top = nextTop
+
+      nextLeft = parseInt(titlu.style.left) + velocityLeft * directionLeft
+      if (nextLeft < 0)
+        nextLeft = width
+      if (titlu.style.left > width)
+        nextLeft = 0
+      titlu.style.left = nextLeft
+    }, 80)
+
+    titlu.onmouseover = function() {
+      alert("ai pierdut")
+    }
+  </script>
+</body>
+</html>
